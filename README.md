@@ -1,1 +1,5 @@
 # Skin-Disease-Classification-using-Resnet50
+
+
+The model classifies different types of Skin Diseases from real-life Images. The model uses transfer learning on Resnet-50 to achieve 76% accuracy. Transfer learning is a research problem in machine learning that focuses on storing knowledge gained while solving one problem and applying it to a different but related problem. ImageDatagenerator was used to allocate a training set and validation set. A global Avg pool and the dense layer were added for 23 classes at the end of Resnet. The model was trained till 100 epochs while a condition was applied to only train the last 20% of Resnet not the whole as the first 80% layers are used to identify edges and shapes in an image whereas the last 20% is used for classification. The model was trained with a batch size of 64 i.e set of only 64 images were passed through the net once this was done to lower the memory requirement. The dataset is downloaded from "https://www.kaggle.com/shubhamgoel27/dermnet".
+This Repository consist the code to train the model and even the code to predict and test your model.
